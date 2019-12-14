@@ -4,6 +4,7 @@ import serial
 import paho.mqtt.client as paho_mqtt
 import re
 import time;
+import json
 
 with open('config.json') as f:
     config = json.load(f)
