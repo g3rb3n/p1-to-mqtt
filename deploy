@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rsync p1_to_mqtt.py root@p1.lan:~/
+rsync p1-to-mqtt.service root@p1.lan:/etc/systemd/system/
+
+ssh -n root@p1.lan 'chmod 644 /etc/systemd/system/p1-to-mqtt.service'
+ssh -n root@p1.lan 'systemctl daemon-reload'
+ssh -n root@p1.lan 'systemctl enable p1-to-mqtt.service'
+ssh -n root@p1.lan 'systemctl restart p1-to-mqtt'

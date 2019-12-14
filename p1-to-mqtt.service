@@ -1,0 +1,11 @@
+[Unit]
+Description=P1 to MQTT
+After=multi-user.target
+
+[Service]
+SyslogIdentifier=p1-to-mqtt
+Type=idle
+ExecStart=/usr/bin/python3 /root/p1_to_mqtt.py
+
+[Install]
+WantedBy=multi-user.target
