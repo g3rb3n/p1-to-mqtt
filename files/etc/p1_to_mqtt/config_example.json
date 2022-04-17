@@ -1,0 +1,16 @@
+{
+    "mqtt":{
+        "username":"<MQTT_USERNAME>",
+        "password":"<MQTT_PASSWORD>",
+        "host": "<MQTT_HOST>",
+        "port": 1883,
+        "client": "p1",
+        "topic": "p1"
+    },
+    "p1":{
+      "serial": {
+        "dev": "/dev/ttyUSB0"
+      }
+    },
+    "timezone":"Europe/Amsterdam"
+}

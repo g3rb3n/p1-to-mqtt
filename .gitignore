@@ -1,1 +1,10 @@
+.env
+.venv
+.coverage
+.pytest_cache
+docs
 config.json
+config.json.bak
+bash/*p1*
+process_test_file.py
+_

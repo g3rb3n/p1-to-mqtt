@@ -11,7 +11,7 @@
 cp config_example.json config.json
 vi config.json
 ```
-Fill in your username and paasword for your mqtt server.
+Fill in your host, username and password for your mqtt server.
 
 == Deploy ==
-make/deploy <YOUR_P1_HOST>
+make/deploy <P1_USER> <P1_HOST> <P1_DIST> <MQTT_HOST> <MQTT_USERNAME> <MQTT_PASSWORD>

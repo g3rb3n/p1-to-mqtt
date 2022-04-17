@@ -1,9 +1,0 @@
-{
-    "mqtt":{
-        "username":"",
-        "password":"",
-        "host": "mqtt.lan",
-        "port": 1883,
-        "client": "p1"
-    }
-}

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+systemctl stop p1-to-mqtt
+echo "pre-update done"

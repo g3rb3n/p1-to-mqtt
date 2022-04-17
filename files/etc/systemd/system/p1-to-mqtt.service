@@ -6,7 +6,7 @@ After=multi-user.target
 WorkingDirectory=/root/
 SyslogIdentifier=p1-to-mqtt
 Type=idle
-ExecStart=/usr/bin/python3 /root/p1_to_mqtt.py
+ExecStart=/usr/bin/python3 /root/p1_to_mqtt/p1_to_mqtt.py
 
 [Install]
 WantedBy=multi-user.target
