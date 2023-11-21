@@ -1,12 +1,13 @@
 [Unit]
 Description=P1 to MQTT
-After=multi-user.target
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 WorkingDirectory=/root/
 SyslogIdentifier=p1-to-mqtt
 Type=idle
-ExecStart=/usr/bin/python3 /root/p1_to_mqtt/p1_to_mqtt.py
+ExecStart=/root/p1_to_mqtt/.venv/bin/python3 -m p1_to_mqtt
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=network-online.target

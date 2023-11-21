@@ -7,6 +7,9 @@ import time
 
 from datetime import datetime
 
+class P1Exception(Exception):
+    pass
+
 class Message:
     def __init__(self):
         self.header = ''
@@ -232,7 +235,7 @@ class Processor():
 
         line = self.first_not_empty_line()
         if not line[0] == '/':
-            raise Exception('No header found `{}`'.format(line))
+            raise P1Exception('No header found `{}`'.format(line))
         message['header'] = line
 
         line = self.first_not_empty_line()
