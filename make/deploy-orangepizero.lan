@@ -1,0 +1,10 @@
+#!/bin/bash
+
+USER=root
+HOST=10.0.2.50
+DIST=bookworm
+MQTT_HOST=mqtt.lan
+MQTT_USERNAME=gerben
+MQTT_PASSWORD=ge0000rb
+
+make/deploy $USER $HOST $DIST $MQTT_HOST $MQTT_USERNAME $MQTT_PASSWORD

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+chmod 644 /etc/systemd/system/p1-to-mqtt.service
+systemctl daemon-reload
+systemctl enable p1-to-mqtt.service
+systemctl restart p1-to-mqtt
+echo "post-install done"

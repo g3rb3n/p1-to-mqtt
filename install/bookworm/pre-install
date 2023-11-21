@@ -1,0 +1,19 @@
+#!/bin/bash
+
+apt update
+apt -y upgrade
+apt -y install python3-pip
+apt -y install python3-setuptools
+apt -y install python3-full
+
+python3 -m venv p1_to_mqtt/.venv
+
+activate () {
+  . p1_to_mqtt/.venv/bin/activate
+}
+
+activate
+
+pip3 install pyserial
+pip3 install paho-mqtt
+pip3 install pytz

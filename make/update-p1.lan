@@ -1,0 +1,10 @@
+#!/bin/bash
+
+USER=root
+HOST=p1.lan
+DIST=bookworm
+MQTT_HOST=mqtt.lan
+MQTT_USERNAME=gerben
+MQTT_PASSWORD=ge0000rb
+
+make/update $USER $HOST $DIST $MQTT_HOST $MQTT_USERNAME $MQTT_PASSWORD
